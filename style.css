@@ -64,3 +64,17 @@ nav a:hover {
     text-decoration: underline;
     color: #2980b9;
 }
+.email-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.email-button:hover {
+    background-color: #2980b9;
+}
