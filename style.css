@@ -1,20 +1,63 @@
-body {
-    font: 100%/1.5 system-ui, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 100vh; 
 }
 
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Menu no topo */
+.menu {
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-links a:hover {
+    background-color: #e67e22; /* Laranja */
+    border-radius: 5px;
+}
+
+/* Container principal */
 .container {
-    text-align: center; 
-    width: 80%;
+    text-align: center;
+    padding: 20px;
     max-width: 800px;
+    margin: 0 auto;
 }
 
 img {
@@ -48,23 +91,26 @@ p {
     margin-bottom: 20px;
 }
 
-nav {
+/* Links sociais */
+.social-links {
     margin-top: 20px;
 }
 
-nav a {
+.social-links a {
     color: #3498db;
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
-    margin: 10px 15px;
+    margin: 0 15px;
 }
 
-nav a:hover {
+.social-links a:hover {
     text-decoration: underline;
     color: #2980b9;
 }
-.email-button {
+
+/* Botão de currículo */
+.cv-button {
     display: inline-block;
     background-color: #3498db;
     color: white;
@@ -73,8 +119,11 @@ nav a:hover {
     border-radius: 5px;
     margin-top: 20px;
     font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.email-button:hover {
+.cv-button:hover {
     background-color: #2980b9;
 }
